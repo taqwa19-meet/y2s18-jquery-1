@@ -3,7 +3,13 @@
 function randomX() {
   return Math.random() * $(window).width();
 }
+$("#moveButton").on("click", function(){
+	var number =randomX();
+	var number2=randomY();
+	$("#message").css("left",number);
+	$("#message").css("top",number2);
 
+})
 function randomY() {
   return Math.random() * $(window).height();
 }
